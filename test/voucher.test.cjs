@@ -1,7 +1,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-// Hàm gốc từ đề bài.
+// Hàm gốc.
 function applyVoucher(order, voucher) {
   if (voucher.expireAt > Date.now()) {
     if (order.total >= voucher.minOrder) {
